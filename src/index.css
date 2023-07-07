@@ -3,6 +3,7 @@ body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5;
   }
   
   h1, h2, h3 {
@@ -11,7 +12,7 @@ body {
   
   /* Header Styling */
   header {
-    background-color: #333;
+    background-color: #606c5d;
     color: #fff;
     padding: 20px;
   }
@@ -22,10 +23,15 @@ body {
     align-items: center;
   }
 
-  .logo{
+  .logo a{
     font-size: 33px;
     font-weight: 700;
-    color: #ff7200;
+    color: #ffa41b;
+    text-decoration: none;
+  }
+
+  .logo a:hover{
+    color: #ffa41b;
   }
   
   nav ul {
@@ -42,14 +48,14 @@ body {
     margin-left: 20px;
   }
   
-  nav a {
+  nav ul li a {
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
   }
   
-  nav a:hover {
-    color: rgba(12, 202, 44, 0.667);
+  nav ul li a:hover {
+    color: #00c4ff;
   }
 
   .fa-bars{
@@ -120,7 +126,7 @@ body {
   }
 
   #about p{
-    background-color: #ff7200;
+    background-color: #00c4ff;
     padding: 10px 30px;
     color: #f7f7f7;
   }
@@ -128,19 +134,19 @@ body {
   h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: rgba(30, 224, 12, 0.667);
+    color: #ff6969;
   }
   
   h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: rgba(12, 202, 28, 0.667);
+    color: #ff6969;
   }
   
   h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: #ff7200;
+    color: #ffa41b;
   }
   
   p {
@@ -154,7 +160,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #ff7200;
+    background-color: #00c4ff;
     padding: 10px 30px;
     color: #fff;
   }
@@ -164,10 +170,82 @@ body {
     margin-bottom: 10px;
   }
 
-  progress{
-    max-width: 500px;
-    height: 30px;
-    background-color: #1cf708;
+  .bar{
+    background-color: #454545;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+  }
+
+  .bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+
+  .bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+  }
+
+  .htm{
+    width: 100%;
+    animation: htm 3s;
+  }
+
+  .cs3{
+    width: 100%;
+    animation: cs3 3s;
+  }
+
+  .jscript{
+    width: 90%;
+    animation: jscript 3s;
+  }
+
+  .rct{
+    width: 75%;
+    animation: rct 3s;
+  }
+
+  @keyframes htm{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
+  @keyframes cs3{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 100%;
+    }
+  }
+
+  @keyframes jscript{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 90%;
+    }
+  }
+
+  @keyframes rct{
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 75%;
+    }
   }
   
   .project {
@@ -190,15 +268,15 @@ body {
     display: inline-block;
     padding: 8px 16px;
     border-radius: 4px;
-    background-color: #ff7200;
+    background-color: #ffa41b;
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
   }
   
   .project a:hover {
-    background-color: #fff;
-    color: #ff7200;
+    background-color: #ff6969;
+    color: #f5f5f5;
   }
   
   /* Contact Form Styling */
@@ -228,7 +306,7 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    background-color: #ff7200;
+    background-color: #ffa41b;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -237,7 +315,7 @@ body {
   }
   
   button[type="submit"]:hover {
-    background-color: #333;
+    background-color: #00c4ff;
     color: #fff;
   }
 
@@ -260,14 +338,21 @@ body {
   }
 
   .social-icons a:hover{
-    color: #ff7200;
+    color: #ffa41b;
   }
 
   footer {
-    background-color: #333;
+    background-color: #606c5d;
     color: #fff;
     padding: 20px;
     text-align: center;
   }
 
+  .fa-facebook:hover{
+    color: #00c4ff;
+  }
+
+  .fa-twitter:hover{
+    color: #00c4ff;
+  }
   
